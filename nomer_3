@@ -1,0 +1,58 @@
+import java.util.ArrayList;
+    public class Belanja {
+        // properties
+        
+private String produk;
+    private int jumlah;
+
+    public String getProduk() {
+        return produk;
+    }
+
+    public void setProduk(String produk) {
+        this.produk = produk;
+    }
+
+    public int getJumlah() {
+        return jumlah;
+    }
+
+    public void setJumlah(int jumlah) {
+        this.jumlah = jumlah;
+    }
+
+    public double getSubtotal() {
+        return subtotal;
+    }
+
+    public void setSubtotal(double subtotal) {
+        this.subtotal = subtotal;
+    }
+
+    public double getTotalBelanja() {
+        return totalBelanja;
+    }
+
+    public void setTotalBelanja(double totalBelanja) {
+        this.totalBelanja = totalBelanja;
+    }
+
+    private double subtotal;
+    private double totalBelanja;
+    public Belanja () {
+        this.produk = produk;
+        this.jumlah = jumlah;
+        this.subtotal = subtotal;
+        this.totalBelanja=0.0;
+    }
+    public Belanja (String produk, int jumlah, double subtotal, double total){}
+
+        // method cetak invoice
+        public void cetakInvoice() {
+            double subtotal = jumlahBarang * hargaBarang;
+            System.out.println("Nama Barang: " + namaBarang);
+            System.out.println("Jumlah Barang: " + jumlahBarang);
+            System.out.println("Harga Barang: " + hargaBarang);
+            System.out.println("Subtotal: " + subtotal);
+        }
+    }
